@@ -40,7 +40,7 @@ export function calculate(calculation) {
 
   if (index === -1) return calculation;
 
-  return operate([
+  return calculate([
     ...calculation.slice(0, index - 1),
     merge(calculation.slice(index - 1, index + 2)),
     ...calculation.slice(index + 2),
